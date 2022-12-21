@@ -1,11 +1,9 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Slides para módulo de React - Generación 22 Kodemia
 
-To start the slide show:
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
 
-Edit the [slides.md](./slides.md) to see the changes.
+Para correr el proyecto: 
+- Ejecutar el comando `npm run dev`
 
-Learn more about Slidev on [documentations](https://sli.dev/).
+- Visitar http://localhost:3030
+
