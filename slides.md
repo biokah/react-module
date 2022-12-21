@@ -34,10 +34,10 @@ Fecha: 19/12/2022
 - Programación declarativa e imperativa
 - SPA
 - Babel y Webpack
-- Historia de react
+- React
 - Componentes
-- Creación de proyectos (create-react-app)
 - JSX, qué es y para qué sirve
+- Creación de proyectos (create-react-app)
 - Componente principal y cómo se renderiza
 - Primer componente funcional
 
@@ -114,7 +114,8 @@ Modificamos el estado y éste se encarga de actualizar el DOM
     <ul>
       <li>Librería creada por facebook (Meta) en 2013</li>
       <li>Open Source</li>
-      <li>Objetivo: construir interfaces o UI</li>
+      <li>Objetivo: construir interfaces
+      </li>
       <li>Current version: React 18</li>
       <li>Antes de React 16.8 los componentes sólo podían ser clases</li>
       <li>Declarativa y basada en componentes</li>
@@ -132,7 +133,6 @@ Modificamos el estado y éste se encarga de actualizar el DOM
   </div>
 
 </div>
-
 
 
 ---
@@ -181,14 +181,11 @@ Modificamos el estado y éste se encarga de actualizar el DOM
 <div class="w-1\/2 flex ml-10 mt-10 flex-col">
   <ul>
     <li>Babel es un transcompilador: convierte código de ES6 en versiones compatibles con el navegador. También convierte jsx y Typescript</li>
-    <li>Webpack es un "module bundler". Genera los paqietes de código necesarios para llevar a producción un proyecto frontend.</li>
+    <li>Webpack es un "module bundler". Genera los paquetes de código necesarios para llevar a producción un proyecto frontend.</li>
 
   </ul>
   </div>
 </div>
-
-
-
 
 
 ---
@@ -221,3 +218,47 @@ https://create-react-app.dev/
 
 ---
 
+
+# TAREA
+
+- Dev.to nav / header
+- 1 repositorio por equipo
+- Empezar a elaborar el read.me con información relevante sobre su equipo
+
+---
+
+
+# React (sesión 2): Estado, Props y Hooks
+
+Fecha: 20/12/2022
+
+
+- ¿Qué es el Estado?
+- ¿Qué son las props?
+- ¿Qué es el DOM virtual?
+- ¿Que es la reconciliación?
+- ¿Qué es el algoritmo de diffing?
+- ¿Qué son las props?
+- Hook useState
+
+
+---
+
+## Estado y props tienen información sobre nuestro componente. Pero el estado se administra dentro del mismo mientras que las props son información que se pasa de un componente padre a un componente hijo.
+
+---
+
+# ¿Cómo funciona React?
+
+## React utiliza un DOM virtual. El DOM virtual es una representación del DOM. Es la herramienta declarativa que nos ofrece la librería para manipular el DOM
+
+<div class="flex">
+	<img src="assets/images/virtualdom.jpeg" />
+</div>
+
+
+---
+
+## Reconciliación es la relación entre el DOM y el DOM virtual, siendo éste último una copia de éste. Cuando hay modificaciones en el estado de un componente, se lleva a cabo un proceso de diffing, es decir, React compara el DOM y el DOM virtual, encuentra las diferencias, y re-renderiza únicamente los nodos cuyo estado fue modificado y sus descendientes
+
+---
